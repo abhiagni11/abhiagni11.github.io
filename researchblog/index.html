@@ -1,14 +1,13 @@
-
 ---
 layout: default
-title: researchblog
+title: Research
 ---
 
 <div class="posts">
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
   <div class="post">
     <h1 class="post-title">
-      <a href="{{ site.baseurl }}/{{ page.title }}/{{ post.url }}">
+      <a href="{{ site.baseurl }}{{ post.url }}">
         {{ post.title }}
       </a>
     </h1>
@@ -36,3 +35,4 @@ title: researchblog
     <span class="pagination-item newer">Newer</span>
   {% endif %}
 </div>
+
