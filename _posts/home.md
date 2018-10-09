@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: post
 title: Home
+category: home
 ---
 
 ### Hi there, I'm Abhijeet!
