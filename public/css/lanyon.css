@@ -537,6 +537,18 @@ a.pagination-item:hover {
   color: #8f5536;
 }
 
+/* Maroon */
+.theme-base-maroon .sidebar,
+.theme-base-maroon .sidebar-toggle:active,
+.theme-base-maroon #sidebar-checkbox:checked ~ .sidebar-toggle {
+  background-color: #800000;
+}
+.theme-base-maroon .container a,
+.theme-base-maroon .sidebar-toggle,
+.theme-base-maroon .related-posts li a:hover {
+  color: #800000;
+}
+
 /* Rainbow */
 .theme-base-0g .sidebar,
 .theme-base-0g .sidebar-toggle:active,
