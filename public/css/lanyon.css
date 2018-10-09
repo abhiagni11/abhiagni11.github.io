@@ -48,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   color: #313131;
-  letter-spacing: -.025rem;
+  letter-spacing: .025rem;
 }
 
 
@@ -149,7 +149,7 @@ h1, h2, h3, h4, h5, h6 {
   visibility: hidden;
   overflow-y: auto;
   font-family: 'Lato', sans-serif;
-  font-size: .875rem; /* 15px */
+  font-size: 1rem; /* 15px */
   color: rgba(255,255,255,.6);
   background-color: #202020;
   -webkit-transition: all .3s ease-in-out;
