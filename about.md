@@ -1,5 +1,5 @@
 ---
-layout: pageNoTitle
+layout: pagenotitle
 title: About
 ---
 
