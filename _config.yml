@@ -18,6 +18,10 @@ author:
 
 # Custom vars
 version:             1.0.0
+
+github:
+  repo: github.com/abhiagni11/abhiagni11.github.io
+
 plugins:
   - jekyll-seo-tag
   - "jekyll-github-metadata"
