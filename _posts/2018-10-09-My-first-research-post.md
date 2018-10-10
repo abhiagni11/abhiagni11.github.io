@@ -1,6 +1,7 @@
 ---
 layout: post
 title: First research post
+comments: true 
 category: researchblog
 ---
 
