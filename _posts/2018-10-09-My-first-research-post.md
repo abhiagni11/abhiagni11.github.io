@@ -5,4 +5,10 @@ comments: true
 category: researchblog
 ---
 
-Add some more content here! !! !! !!!
+I have started this blog to document and track my ongoing research, cool fun sketches and my musings~ 
+
+This is just one sketch that I drew. I plan to sketch a story of my chairbot chess study!
+![Random sketches of people and chairbots](/assets/marlboro_community_photo_2008-940x626.jpg)
+
+## Chairbot chess tournament, spring'18
+The study was conducted in the months of May and June of 2018. I conducted six sessions, in which two chairbots were deployed in the kelley atrium at OSU along with a table having a chessboard on top of it. One chairbot had 'whites-turn' written on it while the other one had 'blacks-turn' written on it. 
