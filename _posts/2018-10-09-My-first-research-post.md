@@ -12,3 +12,5 @@ This is just one sketch that I drew. I plan to sketch a story of my chairbot che
 
 ## Chairbot chess tournament, spring'18
 The study was conducted in the months of May and June of 2018. I conducted six sessions, in which two chairbots were deployed in the kelley atrium at OSU along with a table having a chessboard on top of it. One chairbot had 'whites-turn' written on it while the other one had 'blacks-turn' written on it. 
+
+I am in process of analysing the data from video-coding the sessions! There I will be looking at quantitative data like, number of people entering the scene, number of them who made a move on chessboard, number of them who sat on the chairbot, etc. But, I will also collate interesting qualitative instance data!
