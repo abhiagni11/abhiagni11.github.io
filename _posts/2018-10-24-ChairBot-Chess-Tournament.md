@@ -7,6 +7,8 @@ category: researchblog
 
 Last week I went over all the videos collected from the six chairbot chess sessions done in Spring'18. I discovered a lot of interesting qualitative data in those videos which I had to put on hold and I went on to do some quantitative analysis.
 
+![Chairbots and table setup for the chess study](/data/images/chairbot_chess.jpg)
+
 ## Motivation
 After working on the technical side of building a robot chair 'chairbot', I was interested in researching 'expressive motions'. 
 There has been a lot of work with expressive motion, but it still is a relatively new field in social robotics. 
