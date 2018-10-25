@@ -38,6 +38,8 @@ The research conditions that I was manipulating are shown in this table below:
 The table above shows the actions that chairbots were could perform, and these two action sequences were taken usually to 'persuade' any person to come to the table and play a move. 
 Note that once any person would reach the table, chairbots would offer themselves as seats by scooting in from behind. 
 
+This gif shows the sketches of the two action sequences!![Chairbot chess study, sequence of actions](/data/images/chairbot_chess_sequence.gif)
+
 ## Preliminary Results
 Some preliminary results after going through the videos are shown below in this table
 
@@ -50,5 +52,3 @@ Some preliminary results after going through the videos are shown below in this 
 |                231 |                        184 Yes |  59 (34 white + 25 black) |                  97 Yes |                        81 Yes |
 |                    |                          47 No |                    172 No |                  134 No |                        150 No |
 
-This is just one sketch that I drew. I plan to sketch a story of my chairbot chess study!
-![Random sketches of people and chairbots](/data/images/cb_and_people_and_table-1.jpg)
