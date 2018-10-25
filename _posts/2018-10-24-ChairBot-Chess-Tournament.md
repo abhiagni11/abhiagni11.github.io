@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ChairBot Chess study: preliminary results
+title: ChairBot Chess study - preliminary results
 comments: true 
 category: researchblog
 ---
