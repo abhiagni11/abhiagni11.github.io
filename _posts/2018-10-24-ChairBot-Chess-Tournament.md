@@ -24,12 +24,12 @@ In the sections below, I will discuss some of the research conditions of the stu
 ## Research conditions
 The research conditions that I was manipulating are shown in this table below:
 
-| Chairbot action set || Chairbot action sequence I | Chairbot action sequence II |
-| ------------------- || -------------------------- | --------------------------- |
-|                None ||               Forward-back |                    Spinning |
-|        Forward-back ||                   Approach |                    Approach |
-|            Approach ||                       Bump |                        Bump |
-|                Bump ||            Return to table |             Return to table |
+| Chairbot action set | Chairbot action sequence I | Chairbot action sequence II |
+| ------------------- | -------------------------- | --------------------------- |
+|                None |               Forward-back |                    Spinning |
+|        Forward-back |                   Approach |                    Approach |
+|            Approach |                       Bump |                        Bump |
+|                Bump |            Return to table |             Return to table |
 |     Return to table |
 |            Spinning |
 
