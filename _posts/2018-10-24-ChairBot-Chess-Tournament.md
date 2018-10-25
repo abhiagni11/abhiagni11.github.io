@@ -52,3 +52,4 @@ Some preliminary results after going through the videos are shown below in this 
 |                231 |                        184 Yes |  59 (34 white + 25 black) |                  97 Yes |                        81 Yes |
 |                    |                          47 No |                    172 No |                  134 No |                        150 No |
 
+Going forward, I will be doing statistical analysis on these results with respect to the input conditions, mainly which action sequence led to which human behavior.
