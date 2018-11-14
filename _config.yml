@@ -28,3 +28,4 @@ plugins:
   - "jekyll-github-metadata"
   - jekyll-redirect-from
   - jekyll-paginate
+  - jekyll-sitemap
