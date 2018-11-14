@@ -2,9 +2,9 @@
 permalink:           pretty
 
 # Setup
-title:               smilingfire
+title:               smiling fire
 tagline:             ''
-description:         ''
+description:         'This websites hosts my professional details along with some musings as a roboticist in training'
 url:                 https://abhiagni.com/
 baseurl:             ''
 paginate:            5
