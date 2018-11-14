@@ -5,7 +5,7 @@ permalink:           pretty
 title:               smiling fire
 tagline:             ''
 description:         'This websites hosts my professional details along with some musings as a roboticist in training'
-url:                 https://abhiagni.com/
+url:                 https://abhiagni.com
 baseurl:             ''
 paginate:            5
 
@@ -13,8 +13,8 @@ paginate:            5
 # Credits to Mark Otto for lanyon
 author:
   name:              Abhijeet Agnihotri
-  url:               https://abhiagni.com/
-  shorturl:          abhiagni.com/
+  url:               https://abhiagni.com
+  shorturl:          abhiagni.com
   email:             abhijeet.agni.1993@gmail.com
 
 # Custom vars
