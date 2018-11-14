@@ -5,11 +5,7 @@ permalink:           pretty
 title:               smilingfire
 tagline:             ''
 description:         ''
-<<<<<<< HEAD
 url:                 https://abhiagni.com/
-=======
-url:                 http://abhiagni11.github.io
->>>>>>> 5887527a4d987a66bb236bef1bf215f8ba909ffc
 baseurl:             ''
 paginate:            5
 
@@ -17,13 +13,8 @@ paginate:            5
 # Credits to Mark Otto for lanyon
 author:
   name:              Abhijeet Agnihotri
-<<<<<<< HEAD
   url:               https://abhiagni.com/
   shorturl:          abhiagni.com/
-=======
-  url:               http://abhiagni11.github.io
-  shorturl:          abhiagni11.github.io
->>>>>>> 5887527a4d987a66bb236bef1bf215f8ba909ffc
   email:             abhijeet.agni.1993@gmail.com
 
 # Custom vars
