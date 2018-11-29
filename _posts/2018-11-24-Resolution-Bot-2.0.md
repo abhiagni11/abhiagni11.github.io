@@ -31,4 +31,12 @@ I am proposing to include a couple of key additions to ResolutionBot 2.0, w.r.t.
   * To build trust and camaraderie with the participant, the robot would ask to save human paricipant's face early on in the study. If granted consent, it would then capture the face image through the camera and use this information to recognise the participant in the future.
   
 3. Using ROS 2.0 for improved reliabilty -
-  * Apart from the proposed chages above, we plan on using [ROS 2.0](https://design.ros2.org/) for robot communication as we hope that it would provide improve reliabilty. ROS 2.0 is currently under heavy development but there have been 2 versions of it released already. We will establish a ros-bridge to bridge ROS with ROS 2.0, this way most of our code on the robot would be in ROS and would be integrated with sensors and drivers. But,   
+  * Apart from the proposed chages above, we plan on using [ROS 2.0](https://design.ros2.org/) for robot communication as we hope that it would provide improve reliabilty. ROS 2.0 is currently under heavy development but there have been 2 versions of it released already. We will establish a ros-bridge to bridge ROS with ROS 2.0, this way most of our code on the robot would still be in ROS and be integrated with sensors and drivers. But, for communication over Wifi it would be using ROS 2.0.
+  
+#### Communication framework sketches ####
+
+Communication framework of ResolutionBot 1.
+![Resolution bot 1 sketch](/data/images/resobot1.png)
+
+Proposed communication framework of ResolutionBot 2.
+![Resolution bot 2 sketch](/data/images/resobot2.png)
