@@ -39,6 +39,7 @@ I am proposing to include a couple of key additions to ResolutionBot 2.0, w.r.t.
 <img src="/data/images/face_recognition.gif" width="240">
 </p>
 
+
 3. Using ROS 2.0 for improved reliabilty -
   Apart from the proposed chages above, we plan on using [ROS 2.0](https://design.ros2.org/) for robot communication as we hope that it would provide improve reliabilty. ROS 2.0 is currently under heavy development but there have been 2 versions of it released already. We will establish a ros-bridge to bridge ROS with ROS 2.0, this way most of our code on the robot would still be in ROS and be integrated with sensors and drivers. But, for communication over Wifi it would be using ROS 2.0.
   
