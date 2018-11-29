@@ -45,10 +45,20 @@ I am proposing to include a couple of key additions to ResolutionBot 2.0, w.r.t.
 ### **Communication framework sketches** ###
 
 Communication framework of ResolutionBot 1.
+<!--
 ![Resolution bot 1 sketch](/data/images/resobot1.png)
+-->
+<p align="center">
+<img src="/data/images/resobot1.png" width="720"/>
+</p>
 
 Proposed communication framework of ResolutionBot 2 using ROS 2.0.
+<!--
 ![Resolution bot 2 sketch](/data/images/resobot2.png)
+-->
+<p align="center">
+<img src="/data/images/resobot2.png" width="720"/>
+</p>
 
 ### **Components Tested** ###
 
