@@ -20,6 +20,9 @@ This study already took place last year with a TurtleBot robot which was complet
 
 This year, we want to up our game and introduce some autonomy in the system. This effort is part of the 'long term autonomy' project which seeks to learn and develop autonomy in robotic systems over time by learning from previous experiences, esp. human robot interactions. 
 
+Some components of the Resolution Bot. Note: The final robot would have these components fitted on the robot chassis that is not finalized yet.
+![Resolution bot 2 components](/data/images/resobot_erratic.png)
+
 #### Key additions this year ####
 
 I am proposing to include a couple of key additions to ResolutionBot 2.0, w.r.t. robot autonomy -
@@ -29,6 +32,8 @@ I am proposing to include a couple of key additions to ResolutionBot 2.0, w.r.t.
 
 2. Autonomy in participant recognition -
   * To build trust and camaraderie with the participant, the robot would ask to save human paricipant's face early on in the study. If granted consent, it would then capture the face image through the camera and use this information to recognise the participant in the future.
+  ![Face recognition will only be done after procuring consent](/data/images/face_recognition.png)
+  
   
 3. Using ROS 2.0 for improved reliabilty -
   * Apart from the proposed chages above, we plan on using [ROS 2.0](https://design.ros2.org/) for robot communication as we hope that it would provide improve reliabilty. ROS 2.0 is currently under heavy development but there have been 2 versions of it released already. We will establish a ros-bridge to bridge ROS with ROS 2.0, this way most of our code on the robot would still be in ROS and be integrated with sensors and drivers. But, for communication over Wifi it would be using ROS 2.0.
@@ -40,3 +45,31 @@ Communication framework of ResolutionBot 1.
 
 Proposed communication framework of ResolutionBot 2 using ROS 2.0.
 ![Resolution bot 2 sketch](/data/images/resobot2.png)
+
+#### Components Tested ####
+
+Using ROS, me and Chris Bollinger from the Personal Robot Group at OSU have tested the following components (drivers, see the figure above for what these components are) independently:
+* Hokuyo Lidar
+* Asus depth camera
+* Erratic robot base
+* Camera
+
+We have also tested [rosbridge](https://github.com/ros2/ros1_bridge), this lets us talk to ROS and ROS 2.0. We were succesful in sending Twist messages for robot base motion over the bridge.
+
+#### Future Work ####
+
+Remaining **research goals**, include the following:
+1. Prepare the revised IRB.
+2. Prepare recruitment material.
+3. Experimental design -
+  * Robot manipulation conditions(?)
+  * Where and when will the experiment run?
+  * finalise interaction sequence
+
+The following list is incomplete, but for the major remaining **technical goals**, we still need to:
+1. Finish the final design of robot (how it would look like?) and fabricate the chassis for the components.
+2. Test obstacle avoidance using the Lidar.
+3. Have face recognition system in place.
+4. Integrate these subsystems with a teleoperating UI *interface*.
+5. Interaction annotation system
+
