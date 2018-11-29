@@ -23,7 +23,7 @@ This year, we want to up our game and introduce some autonomy in the system. Thi
 Some components of the Resolution Bot. Note: The final robot would have these components fitted on the robot chassis that is not finalized yet.
 
 <p align="center">
-<img src="/data/images/resobot_erratic.png" width="200"/>
+<img src="/data/images/resobot_erratic.png" width="720"/>
 </p>
 
 #### Key additions this year ####
