@@ -21,7 +21,10 @@ This study already took place last year with a TurtleBot robot which was complet
 This year, we want to up our game and introduce some autonomy in the system. This effort is part of the 'long term autonomy' project which seeks to learn and develop autonomy in robotic systems over time by learning from previous experiences, esp. human robot interactions. 
 
 Some components of the Resolution Bot. Note: The final robot would have these components fitted on the robot chassis that is not finalized yet.
-![Resolution bot 2 components](/data/images/resobot_erratic.png | width=100)
+
+<p align="center">
+<img src="/data/images/resobot_erratic.png" width="200"/>
+</p>
 
 #### Key additions this year ####
 
