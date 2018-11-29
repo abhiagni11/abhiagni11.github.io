@@ -5,7 +5,7 @@ comments: true
 category: researchblog
 ---
 
-### Motivation ###
+## Motivation ##
 
 Ever considered having a robot help you stick to your new year's resolutions? As easy it might seem, every year in the month of January we (considering all humans under a single unbrella, generally true) feel very motivated, excited, disappointed and in despair all at the same time. Sticking to your resolutions is [very hard](https://www.entrepreneur.com/article/306400) and for many of us it's about maintaing the primary wealth of all - our health. 
 
@@ -16,7 +16,7 @@ The idea of 'Resolution Bot' came out of this. It's a robot to help you succeed 
 -->
 This study already took place last year with a TurtleBot robot which was completely teleoperated and was successful in recruiting participants in Graf Hall. This study spanned over three weeks and we saw in total 59 interactions!
 
-### ResolutionBot 2.0 ###
+## ResolutionBot 2.0 ##
 
 This year, we want to up our game and introduce some autonomy in the system. This effort is part of the 'long term autonomy' project which seeks to learn and develop autonomy in robotic systems over time by learning from previous experiences, esp. human robot interactions. 
 
@@ -26,7 +26,7 @@ Some components of the Resolution Bot. Note: The final robot would have these co
 <img src="/data/images/resobot_erratic.png" width="720"/>
 </p>
 
-#### Key additions this year ####
+### Key additions this year ###
 
 I am proposing to include a couple of key additions to ResolutionBot 2.0, w.r.t. robot autonomy -
 
@@ -42,7 +42,7 @@ I am proposing to include a couple of key additions to ResolutionBot 2.0, w.r.t.
 3. Using ROS 2.0 for improved reliabilty -
   Apart from the proposed chages above, we plan on using [ROS 2.0](https://design.ros2.org/) for robot communication as we hope that it would provide improve reliabilty. ROS 2.0 is currently under heavy development but there have been 2 versions of it released already. We will establish a ros-bridge to bridge ROS with ROS 2.0, this way most of our code on the robot would still be in ROS and be integrated with sensors and drivers. But, for communication over Wifi it would be using ROS 2.0.
   
-#### Communication framework sketches ####
+### Communication framework sketches ###
 
 Communication framework of ResolutionBot 1.
 ![Resolution bot 1 sketch](/data/images/resobot1.png)
@@ -50,7 +50,7 @@ Communication framework of ResolutionBot 1.
 Proposed communication framework of ResolutionBot 2 using ROS 2.0.
 ![Resolution bot 2 sketch](/data/images/resobot2.png)
 
-#### Components Tested ####
+### Components Tested ###
 
 Using ROS, me and Chris Bollinger from the Personal Robot Group at OSU have tested the following components (drivers, see the figure above for what these components are) independently:
 * Hokuyo Lidar
@@ -60,7 +60,7 @@ Using ROS, me and Chris Bollinger from the Personal Robot Group at OSU have test
 
 We have also tested [rosbridge](https://github.com/ros2/ros1_bridge), this lets us talk to ROS and ROS 2.0. We were succesful in sending Twist messages for robot base motion over the bridge.
 
-#### Future Work ####
+### Future Work ###
 
 Remaining **research goals**, include the following:
 1. Prepare the revised IRB.
