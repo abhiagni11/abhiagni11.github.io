@@ -28,15 +28,16 @@ Some components of the Resolution Bot. Note: The final robot would have these co
 I am proposing to include a couple of key additions to ResolutionBot 2.0, w.r.t. robot autonomy -
 
 1. Autonomy in robot motion -
-  * Autonomous driving: The robot would have a [Hokuyo lidar](https://www.robotshop.com/en/hokuyo-urg-04lx-ug01-scanning-laser-rangefinder.html) which will be used to map Graf Hall and then use the generated map to go to particular desks on the map. During the experiment runs, the robot would do real-time obstacle avoidance and would use a wizard's help in the end to align itself (face) properly with the participant. The desk information (location and person's name) would also be part of this new system, which would help us track the whereabouts of the robot.
+  Autonomous driving: The robot would have a [Hokuyo lidar](https://www.robotshop.com/en/hokuyo-urg-04lx-ug01-scanning-laser-rangefinder.html) which will be used to map Graf Hall and then use the generated map to go to particular desks on the map. During the experiment runs, the robot would do real-time obstacle avoidance and would use a wizard's help in the end to align itself (face) properly with the participant. The desk information (location and person's name) would also be part of this new system, which would help us track the whereabouts of the robot.
 
 2. Autonomy in participant recognition -
-  * To build trust and camaraderie with the participant, the robot would ask to save human paricipant's face early on in the study. If granted consent, it would then capture the face image through the camera and use this information to recognise the participant in the future.
+  To build trust and camaraderie with the participant, the robot would ask to save human paricipant's face early on in the study. If granted consent, it would then capture the face image through the camera and use this information to recognise the participant in the future.
+<p align="center">
+<img src="/data/images/face_recognition.png">
+</p>
 
-![Face recognition will only be done after procuring consent](/data/images/face_recognition.png)
-    
 3. Using ROS 2.0 for improved reliabilty -
-  * Apart from the proposed chages above, we plan on using [ROS 2.0](https://design.ros2.org/) for robot communication as we hope that it would provide improve reliabilty. ROS 2.0 is currently under heavy development but there have been 2 versions of it released already. We will establish a ros-bridge to bridge ROS with ROS 2.0, this way most of our code on the robot would still be in ROS and be integrated with sensors and drivers. But, for communication over Wifi it would be using ROS 2.0.
+  Apart from the proposed chages above, we plan on using [ROS 2.0](https://design.ros2.org/) for robot communication as we hope that it would provide improve reliabilty. ROS 2.0 is currently under heavy development but there have been 2 versions of it released already. We will establish a ros-bridge to bridge ROS with ROS 2.0, this way most of our code on the robot would still be in ROS and be integrated with sensors and drivers. But, for communication over Wifi it would be using ROS 2.0.
   
 #### Communication framework sketches ####
 
