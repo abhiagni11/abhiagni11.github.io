@@ -38,5 +38,5 @@ I am proposing to include a couple of key additions to ResolutionBot 2.0, w.r.t.
 Communication framework of ResolutionBot 1.
 ![Resolution bot 1 sketch](/data/images/resobot1.png)
 
-Proposed communication framework of ResolutionBot 2.
+Proposed communication framework of ResolutionBot 2 using ROS 2.0.
 ![Resolution bot 2 sketch](/data/images/resobot2.png)
