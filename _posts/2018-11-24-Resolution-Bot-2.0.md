@@ -36,7 +36,7 @@ I am proposing to include a couple of key additions to ResolutionBot 2.0, w.r.t.
 2. Autonomy in participant recognition -
   To build trust and camaraderie with the participant, the robot would ask to save human paricipant's face early on in the study. If granted consent, it would then capture the face image through the camera and use this information to recognise the participant in the future.
 <p align="center">
-<img src="/data/images/face_recognition.png" width="480">
+<img src="/data/images/face_recognition.png" width="240">
 </p>
 
 3. Using ROS 2.0 for improved reliabilty -
