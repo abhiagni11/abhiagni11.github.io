@@ -19,7 +19,7 @@ category: researchblog
 
 ## Mid way report ##
 
-ResoBot 2.0 started last week on Monday (1/14), and didn't had the best of the starts. Knowingly so, we had to fix some of the issues that are inevitable with mobile robots -- broken cable, wrong wiring, loose connections. Apart from these, we were most bugged by the WiFi connection issues faced in the first week. although there is a camera on the robot that streams video over WiFi on the web teleop interface. For navigation we use a gopro as it is much better in quality and also provides with a wider field of vision. Nonetheless, we made our way through the first week. Unexpectedly (at least to me), we were able to recruit 20 participants in the first week itself. With so many people to feed snacks to, it was very exciting along with twitchiness of whether the robot would go into connection-broken-could-not-contact phase.
+ResoBot 2.0 started last week on Monday (1/14), and didn't had the best of the starts. Knowingly so, we had to fix some of the issues that are inevitable with mobile robots -- broken cable, wrong wiring, loose connections. Apart from these, we were most bugged by the WiFi connection issues faced in the first week. Although there is a camera on the robot that streams video over WiFi on the web teleop interface. For navigation we use a gopro as it is much better in quality and also provides with a wider field of vision. Nonetheless, we made our way through the first week. Unexpectedly (at least to me), we were able to recruit 20 participants in the first week itself. With so many people to feed snacks to, it was very exciting along with twitchiness of whether the robot would go into connection-broken-could-not-contact phase.
 
 |  Robot visiting hours   |
 | ----------------------- |
@@ -29,6 +29,7 @@ ResoBot 2.0 started last week on Monday (1/14), and didn't had the best of the s
 | Number of participants* |
 | ----------------------- |
 |                      20 |
+|<img width=200/>|
 
 ### Some problems faced ###
 
