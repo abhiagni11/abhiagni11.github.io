@@ -34,7 +34,7 @@ ResoBot 2.0 started last week on Monday (1/14), and didn't had the best of the s
 4. While running the study, it becomes cumbersome very quickly to track whom the robot has visited and who remains to be fed a snack. We iterated over a few templates in google sheets to store this data.
 5. One interesting addition to this year is autonomous navigations. We haven't used it during the study but we have tested it out before. Actually, as the resobot study progressed, we were updating the map of graf hall - mapping another area and adding it to the map. Due to this, some inconsistency was generated in the teleop interface - which showcases the black-and-white map scanned from the onboard hokuyo lidar - and we couldn't use it during the run.
 
-# Preliminary data #
+### Preliminary data ###
 
 Some participant data collected from the ResoBot so far:
 
@@ -42,7 +42,7 @@ Some participant data collected from the ResoBot so far:
 | ----------- | ----------- | ----------- | -------------- | -------------- |
 |          50 |          35 |          32 |             26 |             30 |
 
-Most popular is again 'bananas', which was competing against apples, granola bars and water.
+Most popular snack is again 'banana', which was competing against apples, granola bars and water.
 
 There are three more full days remaining, which means 6 sessions in total which would result in around 60 visits in addition to the 50 visits so far. This is nearing double than last year where the robot had done total 65 visits.
 
