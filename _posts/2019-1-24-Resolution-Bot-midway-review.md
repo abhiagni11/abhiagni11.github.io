@@ -8,13 +8,13 @@ category: researchblog
 ### How does the robot look like (while docked) ###
 
 <p align="center">
-<img src="/data/images/resolution_bot_docked.png" width="240">
+<img src="/data/images/resolution_bot_docked.png" width="480">
 </p>
 
 ### Where are the drivers ###
 
 <p align="center">
-<img src="/data/images/resolution_bot_drivers.png" width="240">
+<img src="/data/images/resolution_bot_drivers.png" width="720">
 </p>
 
 ## Mid way report ##
