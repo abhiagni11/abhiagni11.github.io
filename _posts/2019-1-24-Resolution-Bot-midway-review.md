@@ -25,11 +25,12 @@ ResoBot 2.0 started last week on Monday (1/14), and didn't had the best of the s
 | ----------------------- |
 | M-W-F, morning 9-11 AM  |
 | M-W-F, afternoon 2-4 PM |
+|<img width=240/>|
 
 | Number of participants* |
 | ----------------------- |
 |                      20 |
-|<img width=200/>|
+|<img width=240/>|
 
 ### Some problems faced ###
 
