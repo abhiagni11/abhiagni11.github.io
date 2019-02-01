@@ -3,7 +3,21 @@
 
   {% include head.html %}
   {% seo %}
-
+  
+  <script type="text/javascript">
+    var imageURLs = [
+         "/data/images/eng-abhiagni.png"
+       , "/data/images/hin-abhiagni.png"
+    ];
+    function getImageTag() {
+      var img = '<img src=\"';
+      var randomIndex = Math.floor(Math.random() * imageURLs.length);
+      img += imageURLs[randomIndex];
+      img += '\" alt=\"Some alt text\"/>';
+      return img;
+    }
+  </script>
+  
   <body class="theme-base-maroon">
 
     {% include sidebar.html %}
@@ -16,7 +30,11 @@
           <h1 class="masthead-title">
             <!-- <a href="{{ site.baseurl }}/" title="Home"><strong>&#x2605 A B H I &#x2605 A G N I &#x2605</strong></a> 
               https://www.w3schools.com/charsets/ref_utf_symbols.asp -->
-            <a href="{{ site.baseurl }}/" title="Home"><strong>A B H I A G N I</strong></a>
+            <a href="{{ site.baseurl }}/" title="Home"><strong>
+              <script type="text/javascript">
+                document.write(getImageTag());
+              </script>
+              </strong></a>
             <small>{{ site.tagline }}</small>
           </h1>
         </div>
