@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div class="robotics">
+  <h2 class="robotics-title">{{ page.title }}</h2>
+  <span class="robotics-date">{{ page.date | date_to_string }}</span>
+  {{ content }}
+</div>
+
+<div class="related">
+  <h3>Related Robotics Projects</h3>
+  <ul class="related-projects">
+    {% for project in site.related_projects limit:3 %}
+      <li>
+        <h4>
+          <a href="{{ site.baseurl }}{{ project.url }}">
+            {{ project.title }}
+            <small>{{ project.date | date_to_string }}</small>
+          </a>
+        </h4>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
