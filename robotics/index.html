@@ -5,13 +5,16 @@ title: Robotics
 
 <div class="posts">
   {% for post in site.categories.robotics %}
-  <div class="post">
-    <h2 class="post-title">
-      <a href="{{ site.baseurl }}{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h2>
-    {{ post.description }}
-  </div>
+  	<div class="column">
+	  <div class="post">
+	    <h2 class="post-title">
+	      <a href="{{ site.baseurl }}{{ post.url }}">
+	        {{ post.title }}
+	      </a>
+	    </h2>
+	    {{ post.description }}
+	  </div>
+	</div>
+  	<div class="column"></div>
   {% endfor %}
 </div>
