@@ -8,26 +8,25 @@ layout: default
   {{ content }}
 </div>
 
-{% if page.category == "researchblog" %}
-  <div class="related">
-    <h3>You may also enjoy~</h3>
-    <ul class="related-posts">
-    {% for post in site.related_posts limit:3 %}
-      {% for category in post.categories %}
-        {% if post.url != page.url %}
-          {% if page.category contains category %}
-            <li>
-              <h4>
-                <a href="{{ site.baseurl }}{{ post.url }}">
-                  {{ post.title }}
-                  <small>{{ post.date | date_to_string }}</small>
-                </a>
-              </h4>
-            </li>
-          {% endif %}
+<div class="related">
+  <h3>You may also enjoy~</h3>
+  <ul class="related-posts">
+  {% assign maximum_posts = 5 %}
+  {% for post in site.related_posts limit:maximum_posts %}
+    {% for category in post.categories %}
+      {% if post.url != page.url %}
+        {% if page.category contains category %}
+          <li>
+            <h4>
+              <a href="{{ site.baseurl }}{{ post.url }}">
+                {{ post.title }}
+                <small>{{ post.date | date_to_string }}</small>
+              </a>
+            </h4>
+          </li>
         {% endif %}
-      {% endfor %}
+      {% endif %}
     {% endfor %}
-    </ul>
-  </div>
-{% endif %}
+  {% endfor %}
+  </ul>
+</div>
