@@ -7,58 +7,27 @@ layout: default
   <span class="post-date">{{ page.date | date_to_string }}</span>
   {{ content }}
 </div>
-<!-- 
+
 {% if page.category == "researchblog" %}
   <div class="related">
-    <h3>Related Posts</h3>
+    <h3>You may also enjoy~</h3>
     <ul class="related-posts">
-      {% for post in site.related_posts limit:3 %}
-        <li>
-          <h4>
-            <a href="{{ site.baseurl }}{{ post.url }}">
-              {{ post.title }}
-              <small>{{ post.date | date_to_string }}</small>
-            </a>
-          </h4>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
-{% endif %}
- -->
-<div class="relatedPosts">
-
-<h4>You May Also Enjoy</h4> 
-  
-{% assign maxRelated = 4 %}
-{% assign minCommonTags =  2 %}
-{% assign maxRelatedCounter = 0 %}
-
-{% for post in site.posts %}
-
-    {% assign sameTagCount = 0 %}
-    {% assign commonTags = '' %}
-
     {% for category in post.categories %}
       {% if post.url != page.url %}
         {% if page.categories contains category %}
-          {% assign sameTagCount = sameTagCount | plus: 1 %}
-          {% capture tagmarkup %} <span class="label label-default">{{ category }}</span> {% endcapture %}
-          {% assign commonTags = commonTags | append: tagmarkup %}
+          {% for post in site.related_posts limit:3 %}
+            <li>
+              <h4>
+                <a href="{{ site.baseurl }}{{ post.url }}">
+                  {{ post.title }}
+                  <small>{{ post.date | date_to_string }}</small>
+                </a>
+              </h4>
+            </li>
+          {% endfor %}
         {% endif %}
       {% endif %}
     {% endfor %}
-
-    {% if sameTagCount >= minCommonTags %}
-      <div>
-      <h5><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}{{ commonTags }}</a></h5>
-      </div>
-      {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
-      {% if maxRelatedCounter >= maxRelated %}
-        {% break %}
-      {% endif %}
-    {% endif %}
-
-  {% endfor %}
-
-</div>
+    </ul>
+  </div>
+{% endif %}
