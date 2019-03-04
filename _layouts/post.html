@@ -4,7 +4,12 @@ layout: default
 
 <div class="post">
   <h2 class="post-title">{{ page.title }}</h2>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
+  {% if page.category = "researchblog" %}
+    <span class="post-date">{{ page.date | date_to_string }}</span>
+  {% endif %}
+  {% if page.category = "musings" %}
+    <span class="post-date">{{ page.date | date_to_string }}</span>
+  {% endif %}
   {{ content }}
 </div>
 
@@ -20,7 +25,7 @@ layout: default
             <h4>
               <a href="{{ site.baseurl }}{{ post.url }}">
                 {{ post.title }}
-                <small>{{ post.date | date_to_string }}</small>
+                <!-- <small>{{ post.date | date_to_string }}</small> -->
               </a>
             </h4>
           </li>
