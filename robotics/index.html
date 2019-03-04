@@ -6,7 +6,10 @@ title: Robotics
 <div class="posts">
   {% for post in site.categories.robotics %}
 	  <div class="post">
-		<div style="width: 50%; float:left">
+		<div align="right" style="width: 50%; float:left">
+	      <img src="{{ post.thumbnail }}" alt="" style="width: 90%">
+		</div>
+		<div style="width: 50%; float:right">
 	      <h2 class="post-title">
 	        <a href="{{ site.baseurl }}{{ post.url }}">
 	          {{ post.title }}
@@ -14,9 +17,6 @@ title: Robotics
 	      </h2>
 	      {{ post.description }}
 	    </div>
-		<div style="width: 50%; float:right">
-	      right content in there
-		</div>
 	  <br style="clear:both;"/>
 	</div>
   {% endfor %}
