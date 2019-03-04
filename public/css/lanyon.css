@@ -444,6 +444,23 @@ a.pagination-item:hover {
 
 
 /*
+ * Added columns.
+ */
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/*
  * Themes
  *
  * Apply custom color schemes by adding the appropriate class to the `body`.
