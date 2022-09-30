@@ -2,56 +2,39 @@
 layout: page
 title: About
 permalink: /about/
-image: '/images/01.jpg'
+image: '/images/abhi-kinova.jpg'
 ---
 
-Leverage agile frameworks to provide a robust [Hugo Sousa](https://unsplash.com/photos/BghGseQbAkA) synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+Hi! I am Abhijeet Agnihotri. You can call me 'a bee.' I'm a human-robot-interaction (HRI) researcher, designer, a serious hobbyist musician, and an avid runner. On a single day, you can find me doing all of these things.
 
-Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+### Robotics
 
-> The longer I live, the more I realize that I am never wrong about anything, and that all the pains I have so humbly taken to verify my notions have only wasted my time!
+I like to create and explore. I help discover ways that robots can solve problems for people as well as finding ways for robots and humans to have natural, intelligent, and enjoyable interactions. This requires the involvement of multiple engineers, researchers, and designers, my strength is in liaising with different people, which my background has prepared me for!
 
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+I am currently working as a UX developer within the robotics user experience and industrial design team at the [Toyota Research Institute](https://www.tri.global/about-us/abhijeet-agnihotri), in Cambridge, MA, USA. To learn more about my background, take a look at my ['CV'](https://abhiagni.com/cv).
 
-Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.
+I was always interested in technology and robotics. However, the turning point for me was my internship at Stanford after my junior year. That year, I built a robotic chair that roamed around in a hall and could approach people in “interesting” ways. For example, gently bumping into a person to persuade them to follow it or signaling different intentions through its motion. The goal behind the chairbot project was to explore different interactions between a human and a robotic object. This explorative experience was transformative for me because it showed me how creative the field of robotics really is. 
 
-![Workflow]({{site.baseurl}}/images/03.jpg)
-*Photo by [Hugo Sousa](https://unsplash.com/photos/BghGseQbAkA) on Unsplash*
+> Ultimately, I realized that robotics is actually about the human interacting with the robot rather than the other way around.
 
-Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/BnXC82-PPIQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
-Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+Oh and also, I was the first roboticist to be part of [Conan O'Brien's](https://en.wikipedia.org/wiki/Conan_O%27Brien) podcast. I have always been a HUGE fan of his humour and here is a funny video excerpt from the interview. The [C.U.T.I.E. podcast](https://listen.teamcoco.com/cutie) is funny, entertaining, and personally a memory for me to cherish for the rest of my life 😌.
 
-### Podcasting
+### Music and me
 
-Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable [Hugo Sousa](https://unsplash.com/photos/BghGseQbAkA) customer service through sustainable potentialities.
+I have a deep passion for music, composing and writing songs. I have bunch of guitars and a mini-studio at my home. I primarily play guitar, record and am learning to produce songs. Here is an original song that I recorded sometime ago.
 
-Collaboratively administrate turnkey channels whereas virtual e-tailers. Objectively seize scalable metrics whereas proactive e-services. Seamlessly empower fully researched growth strategies and interoperable internal or "organic" sources.
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/lo9US7es6Dw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
-<div class="gallery-box">
-  <div class="gallery">
-    <img src="/images/09.jpg">
-    <img src="/images/06.jpg">
-    <img src="/images/03.jpg">
-    <img src="/images/08.jpg">
-    <img src="/images/05.jpg">
-    <img src="/images/11.jpg">
-  </div>
-  <em>Gallery / <a href="https://unsplash.com/" target="_blank">Unsplash</a></em>
-</div>
+Busy with robots or not, you can find me noodling around with my guitar. My all time favorite popular bands include: [Queen](https://en.wikipedia.org/wiki/Queen_(band)), [The Beatles](https://en.wikipedia.org/wiki/The_Beatles), [RHCP](https://en.wikipedia.org/wiki/Red_Hot_Chili_Peppers), [Led Zeppelin](https://en.wikipedia.org/wiki/Led_Zeppelin), [Travis](https://en.wikipedia.org/wiki/Travis_(band)), and sooo much more ...
 
-Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.
+> If I were not a roboticist, I would probably be a musician. I often think in music. I live my daydreams in music. I see my life in terms of music.
 
-Objectively innovate empowered manufactured products whereas parallel platforms. Holisticly predominate extensible testing procedures for reliable supply chains. Dramatically engage top-line web services vis-a-vis cutting-edge deliverables.
+### Running
 
-### Synergistically evolve
+I had always been a chubby overweight kid with no interest in running. I could have never imagined being a Marathoner. What changed? you ask - well, the covid years had been "crazy" for everyone, including me. Although one good thing that did come out of it was my "passion for running". What started in April 2020, in the form of a simple 5k run for charity - I continued running to keep my mental psyche intact and also for my physical fitness. Little did I know back then that I would be attempting to run a marathon. In my own way, I tried to capture the excitement, the struggle, and the overall relief felt on that day in this video.
 
-Globally incubate standards compliant channels before scalable benefits. Quickly disseminate superior deliverables whereas web-enabled applications. Quickly drive clicks-and-mortar catalysts for change before vertical architectures.
-
-<p><iframe src="https://player.vimeo.com/video/147264547?title=0&byline=0" width="640" height="360" frameborder="0" allowfullscreen></iframe></p>
-
-Credibly reintermediate backend ideas for cross-platform models. Continually reintermediate integrated processes through technically sound intellectual capital. Holistically foster superior methodologies without market-driven best practices.
-
-Distinctively exploit optimal alignments for intuitive bandwidth. Quickly coordinate e-business applications through revolutionary catalysts for change. Seamlessly underwhelm optimal testing procedures whereas bricks-and-clicks processes.
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/-Ua_xkg75fg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
 ***

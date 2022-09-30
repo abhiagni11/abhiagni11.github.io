@@ -2,6 +2,7 @@
 
 :root {
   --brand-color: #5e3aee;
+  --brand-dark-color: #15006b;
   --white: #fff;
   --light-gray: #f0f0f0;
   --light-blue: #f8f6fb;
@@ -18,8 +19,8 @@
   
   --heading-font-color: var(--dark-blue);
 
-  --link-color: var(--dark-blue);
-  --link-color-hover: var(--dark-blue);
+  --link-color: var(--brand-dark-color);
+  --link-color-hover: var(--brand-dark-color);
 
   --button-color: var(--white);
   --button-background-color: var(--brand-color);

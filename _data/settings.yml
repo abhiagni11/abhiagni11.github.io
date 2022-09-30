@@ -1,10 +1,9 @@
 #-------------------------------
 # Site Settings
-title: Clancy
-logo: # You can add own logo. For example '/images/logo.png'.
-author: Jason Collins
-description: Clancy is a elegant portfolio theme for Jekyll.
-
+title: abhiagni
+logo: # /images/logo.gif # You can add own logo. For example '/images/logo.png'.
+author: Abhijeet Agnihotri
+description: Home to some ideas and a digital avenue to communicate and create connections.
 
 #-------------------------------
 # Menu Settings
@@ -12,83 +11,95 @@ menu__settings:
   menu__items:
     - title: 'Home'
       url: '/'
-    - title: 'Blog'
-      url: '/blog/'
     - title: 'About'
       url: '/about/'
+    # - title: 'Projects'
+    #   url: '/projects/'
+    # - title: 'Blog'
+    #   url: '/blog/'
+    - title: 'CV'
+      url: '/cv/'
     - title: 'Contact'
       url: '/contact/'
-    - title: 'Elements'
-      url: '/elements/'
-
 
 #-------------------------------
 # Hero Settings
 hero:
-  hero__title: Hello, my name’s Jason. I’m a Designer & Photographer based in San Francisco.
-  hero__description: I'm a freelance designer and photographer. For almost five years I have been working with clients from a variety of clients to create pieces that meet their goals. I invite you to navigate my portfolio to know a bit more about me and my work.
+  hero__title:  Namaste! I am Abhijeet Agnihotri.<br>I explore. Experiences with robots, music, and people.
+  hero__description: I do HRI (Human-Robot Interaction) research and create interactive technology to bridge the gap between these two worlds. I am interested in understanding the relationship between humans and robots. How can robots and humans work together? Oh, would you want to have your own personal robot? Why?
 
 
 #-------------------------------
 # Portfolio Settings
 portfolio:
-  portfolio__title: Portfolio
+  portfolio__title: Expeditions
   portfolio__gallery:
-    - image: /images/gallery-01.jpg
-      title: Samantha Gades
-      description: Brown photo frame beside wall <a href="https://unsplash.com/photos/8Od75hgzb9Y">Unsplash</a>
+    - image: /images/f1tenth.png
+      title: f1tenth = 1/10th size of f1 cars, 10 times the fun!
+      description: I am part of the open source <a href="http://f1tenth.org">f1tenth</a> community, aimed at getting autonomous systems knowledge out to the general public. My <a href="https://par.nsf.gov/servlets/purl/10221877">paper</a> on this course won a best paper award at the prestigious SIGCSE conference.
 
-    - image: /images/gallery-02.jpg
-      title: Paula Vermeulen
-      description: Gray mountain covered by mountain <a href="https://unsplash.com/photos/_f2m3mEkaaU">Unsplash</a>
+    - image: /images/soft-bubble-input.png
+      title: US Patent for using a soft bubble as an intelligent input device.
+      description: My invention for using a deformable soft-bubble like surface as an input device (just like your mouse) was awarded a <a href="https://patentimages.storage.googleapis.com/be/de/91/da7f78d8a943c5/US20220234212A1.pdf">US Patent</a>.
 
-    - image: /images/gallery-03.jpg
-      title: Bench Accounting
-      description: White wooden table near brown chair <a href="https://unsplash.com/photos/nvzvOPQW0gc">Unsplash</a>
+    - image: /images/chairbot-halloween.png
+      title: Chairbot on Halloween.
+      description: On one spooky halloween, I deployed a robotic chair in my university to distribute candy. Check the full video <a href="https://www.youtube.com/watch?v=3BiTcBn9vDk">here</a>!
 
-    - image: /images/gallery-04.jpg
-      title: Nord Wood
-      description: White ceramic mug <a href="https://unsplash.com/photos/nDd3dIkkOLo">Unsplash</a>
+    - image: /images/ditinguish-personality.png
+      title: Distinguishing Robot Personality from Motion.
+      description: Yes! It is possible to design robot personality! And you know what, it can be achieved simply by designing different movements/motion behaviour! Check this out <a href="https://samarendrahedaoo.com/papers/Distinguishing_Robot_Personality_from_Motion.pdf">here</a>!
 
-    - image: /images/gallery-05.jpg
-      title: Luca Bravo
-      description: White ribs in a facade against a white sky <a href="https://unsplash.com/photos/alS7ewQ41M8">Unsplash</a>
+    - image: /images/robot-state-workshop.png
+      title: Designing tools to explore robot state expression
+      description: For this project, I designed a fun and interactive HAT. Imagine you are a robot which can emit lights, sounds and move around? I asked participants to do the same while using the hat that I had them wear!
 
-    - image: /images/gallery-06.jpg
-      title: Isaac Benhesed
-      description: Minimalist black coffee <a href="https://unsplash.com/photos/onLbXleIkds">Unsplash</a>
+    - image: /images/exploring-robot-states.png
+      title: Understanding and Defining “Robot States” for General Population.
+      description: With increasing number of home and social robot products, it is essential for bystanders to feel comfortable in using and understanding these robots in their homes. Check out <a href="https://dl.acm.org/doi/abs/10.1145/3434074.3447145">here</a> what this means for different types of robots!
 
-    - image: /images/gallery-07.jpg
-      title: Water Journal
-      description: Water Journal is a bi-annual publication exploring the beauty and complexity of all things water <a href="https://unsplash.com/photos/EbuaKnSm8Zw">Unsplash</a>
+    - image: /images/just-treading.png
+      title: Desiging social navigation behavior for minimal robots.
+      description: Mobile robots are everywhere. Their success depends not only on their task performance, but also on how these machines and their behaviors are perceived by human users. Check out <a href="https://samarendrahedaoo.com/papers/Distinguishing_Robot_Personality_from_Motion.pdf">here</a> how I approach this problem through participatory design!
 
-    - image: /images/gallery-08.jpg
-      title: Luca Bravo
-      description: Worms eye view of city buildings <a href="https://unsplash.com/photos/a6x7YPiNxwI">Unsplash</a>
+    - image: /images/chairbot-persuasion.png
+      title: Chairbot strategies for persuasion.
+      description: For this project, I was exploring various robot behaviors (sketched here) that would persuade people to come to the chairbots and play with them. Check out <a href="https://ieeexplore.ieee.org/abstract/document/8956262">here</a> what happened next!
 
-    - image: /images/gallery-09.jpg
-      title: Books and Laptop
-      description: Silver laptop computer with two books on the top <a href="https://unsplash.com/photos/fFIAKABImf4">Unsplash</a>
+    - image: /images/chairbot-cafe.png
+      title: Chairbot cafe.
+      description: Imagine being hauled by a robotic chair that invites you to a robot cafe, where all the furniture is robotic. Curious? Find more about that future <a href="http://socialrobotsinthewild.org/wp-content/uploads/2018/02/HRI-SRW_2018_paper_8.pdf">here</a>!
 
+    - image: /images/chairbot-chess.jpg
+      title: ChairBot chess tournament setup.
+      description: Two ChairBots near a table were having a chessboard on it in a computer science school atrium. Each of them tried to move around and recruit bystanders to take part in the chess tournament. Who won? Find it out <a href="https://ieeexplore.ieee.org/abstract/document/8956262">here</a>!
+
+    - image: /images/robot-anthropo.png
+      title: De/anthropomorphic = An exploration of human and robot forms.
+      description: In groups, people can lose their individuality and blur into abstract forms. In this collaborative project with a dancer artist, we tried to explore this concept through robots. This <a href="">production</a> celebrates the unhuman in people with machines.
+
+    - image: /images/alibot.png
+      title: Bachelor thesis project on building an alligator inspired robot.
+      description: For my undergrad ME thesis, I designed, fabricated and developed controller for an alligator inspired robot. The goal of this project was to understand the effect of body undulation on the robot's speed and energy consumption.
 
 #-------------------------------
 # Subscribe Settings
 mailchimp:
-  mailchimp__title: Get updates and digital art inspiration # Add your Title
-  mailchimp__identifier: # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
+  mailchimp__title: Get updates on robots + music + art + ? # Add your Title
+  mailchimp__identifier: https://abhiagni.us9.list-manage.com/subscribe/post?u=cc45b160937a1598b1b9cc5b1&amp;id=f67363330f&amp;f_id=00e208e1f0 # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
   mailchimp__button__text: Subscribe # Add your button text.
-  mailchimp__bg__color: "#f2eef8" # To change the color of the figure, add a hexadecimal color code (HEX). For example - "#f2eef8" (You can generate any color here - https://htmlcolorcodes.com/).
+  mailchimp__bg__color: "#f2eef9" # To change the color of the figure, add a hexadecimal color code (HEX). For example - "#f2eef8" (You can generate any color here - https://htmlcolorcodes.com/).
 
 
 #-------------------------------
 # Footer Settings
 social:
-- {icon: "ion-logo-twitter", color: "#55acee", label: Twitter, link: "https://twitter.com"}
-- {icon: "ion-logo-facebook", color: "#3b5999", label: Facebook, link: "https://facebook.com"}
-- {icon: "ion-logo-pinterest", color: "#bd081c", label: Pinterest, link: "https://pinterest.com"}
-- {icon: "ion-logo-dribbble", color: "#ea4c89", label: Dribbble, link: "https://dribbble.com"}
-- {icon: "ion-logo-instagram", color: "#e4405f", label: Instagram, link: "https://instagram.com"}
-- {icon: "ion ion-logo-vimeo", color: "#1393cd", label: Vimeo, link: "https://vimeo.com"}
+- {icon: "ion-logo-github", color: "#000000", label: Github, link: "https://github.com/abhiagni11"}
+- {icon: "ion-logo-linkedin", color: "#0072b1", label: Linkedin, link: "https://www.linkedin.com/in/abhijeet-agnihotri/"}
+- {icon: "ion-logo-twitter", color: "#55acee", label: Twitter, link: "https://twitter.com/agniabhijeet"}
+- {icon: "ion-logo-facebook", color: "#3b5999", label: Facebook, link: "https://www.facebook.com/abhiagniho"} 
+- {icon: "ion-logo-instagram", color: "#C13584", label: Instagram, link: "https://www.instagram.com/abhiagniho/"}
+- {icon: "ion ion-logo-youtube", color: "#FF0000", label: Youtube, link: "https://www.youtube.com/channel/UC3pDFASrOgaycX3yNWO7VZA"}
 
 # Example of adding a new link to the footer section - {icon: "ion-logo-github", color: "#24292e, label: Github, link: "https://github.com"}
 # Other icons can be found at https://ionicons.com/v4/
@@ -97,18 +108,13 @@ social:
 #-------------------------------
 # Contact Settings
 contact:
-  email: your@email.com # Add your email for contact form
-  description: Clancy comes with a built-in contact form, that you can use with Formspree service to handle up to 50 submissions per month for free. You could also easily switch to another contact form service if you want. # Add a description of your form.
-
-# NOTE
-# Clancy comes with a built-in contact form, that you can use with Formspree service to handle up to 50 submissions per month for free. You could also easily switch to another contact form service if you want.
-
+  email: f/xbjbyjry # Add your email for contact form
+  description: Please say hi! Ask me a question, reach out, share a funny meme or just send me a lovely wish. I accept kindness in all forms :) # Add a description of your form.
 
 #-------------------------------
 # Comment Section (Disqus)
 
-disqus-identifier: anvodstudio-demo # add your shortname for Disqus Comment. For example anvodstudio-demo
-
+disqus-identifier: abhiagni-com # add your shortname for Disqus Comment. For example anvodstudio-demo
 
 #-------------------------------
 # Google Analytics

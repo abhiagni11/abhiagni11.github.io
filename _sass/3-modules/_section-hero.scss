@@ -10,8 +10,8 @@
 .hero__inner {
   .hero__title {
     margin-bottom: 32px;
-    font-size: 68px;
-    line-height: 1.2;
+    font-size: 64px;
+    line-height: 1.1;
     color: var(--heading-font-color);
 
     @media only screen and (max-width: 1140px) {
@@ -34,7 +34,7 @@
 
   .hero__description {
     margin-bottom: 0;
-    font-size: 24px;
+    font-size: 20px;
     color: var(--text-alt-color);
 
     @media only screen and (max-width: $desktop) {
