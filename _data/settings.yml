@@ -1,3 +1,4 @@
+---
 #-------------------------------
 # Site Settings
 title: abhiagni
@@ -8,108 +9,135 @@ description: Home to some ideas and a digital avenue to communicate and create c
 #-------------------------------
 # Menu Settings
 menu__settings:
-  menu__items:
-    - title: 'Home'
-      url: '/'
-    - title: 'About'
-      url: '/about/'
-    # - title: 'Projects'
-    #   url: '/projects/'
-    # - title: 'Blog'
-    #   url: '/blog/'
-    - title: 'CV'
-      url: '/cv/'
-    - title: 'Contact'
-      url: '/contact/'
+    menu__items:
+        - title: "Home"
+          url: "/"
+        - title: "About"
+          url: "/about/"
+        # - title: 'Projects'
+        #   url: '/projects/'
+        # - title: 'Blog'
+        #   url: '/blog/'
+        - title: "CV"
+          url: "/cv/"
+        - title: "Contact"
+          url: "/contact/"
 
 #-------------------------------
 # Hero Settings
 hero:
-  hero__title:  Namaste! I am Abhijeet Agnihotri.<br>I explore. Experiences with robots, music, and people.
-  hero__description: I do HRI (Human-Robot Interaction) research and create interactive technology to bridge the gap between these two worlds. I am interested in understanding the relationship between humans and robots. How can robots and humans work together? Oh, would you want to have your own personal robot? Why?
-
+    hero__title: Namaste! I am Abhijeet Agnihotri.<br>I explore. Experiences with robots, music, and people.
+    hero__description: I specialize in HRI (Human-Robot Interaction), creating technology that brings humans and robots closer together. Exploring how we can work alongside robots in our daily lives. Imagine having your own personal robot — what would you want it to do, and how would it transform your world?
 
 #-------------------------------
 # Portfolio Settings
 portfolio:
-  portfolio__title: Expeditions
-  portfolio__gallery:
-    - image: /images/f1tenth.png
-      title: f1tenth = 1/10th size of f1 cars, 10 times the fun!
-      description: I am part of the open source <a href="http://f1tenth.org">f1tenth</a> community, aimed at getting autonomous systems knowledge out to the general public. My <a href="https://par.nsf.gov/servlets/purl/10221877">paper</a> on this course won a best paper award at the prestigious SIGCSE conference.
+    portfolio__title: Expeditions
+    portfolio__gallery:
+        - image: /images/f1tenth.png
+          title: f1tenth = 1/10th size of f1 cars, 10 times the fun!
+          description: I am part of the open source <a href="http://f1tenth.org">f1tenth</a> community, aimed at getting autonomous systems knowledge out to the general public. My <a href="https://par.nsf.gov/servlets/purl/10221877">paper</a> on this course won a best paper award at the prestigious SIGCSE conference.
 
-    - image: /images/soft-bubble-input.png
-      title: US Patent for using a soft bubble as an intelligent input device.
-      description: My invention for using a deformable soft-bubble like surface as an input device (just like your mouse) was awarded a <a href="https://patentimages.storage.googleapis.com/be/de/91/da7f78d8a943c5/US20220234212A1.pdf">US Patent</a>.
+        - image: /images/soft-bubble-input.png
+          title: US Patent for using a soft bubble as an intelligent input device.
+          description: My invention for using a deformable soft-bubble like surface as an input device (just like your mouse) was awarded a <a href="https://patentimages.storage.googleapis.com/be/de/91/da7f78d8a943c5/US20220234212A1.pdf">US Patent</a>.
 
-    - image: /images/chairbot-halloween.png
-      title: Chairbot on Halloween.
-      description: On one spooky halloween, I deployed a robotic chair in my university to distribute candy. Check the full video <a href="https://www.youtube.com/watch?v=3BiTcBn9vDk">here</a>!
+        - image: /images/chairbot-halloween.png
+          title: Chairbot on Halloween.
+          description: On one spooky halloween, I deployed a robotic chair in my university to distribute candy. Check the full video <a href="https://www.youtube.com/watch?v=3BiTcBn9vDk">here</a>!
 
-    - image: /images/ditinguish-personality.png
-      title: Distinguishing Robot Personality from Motion.
-      description: Yes! It is possible to design robot personality! And you know what, it can be achieved simply by designing different movements/motion behaviour! Check this out <a href="https://samarendrahedaoo.com/papers/Distinguishing_Robot_Personality_from_Motion.pdf">here</a>!
+        - image: /images/ditinguish-personality.png
+          title: Distinguishing Robot Personality from Motion.
+          description: Yes! It is possible to design robot personality! And you know what, it can be achieved simply by designing different movements/motion behaviour! Check this out <a href="https://samarendrahedaoo.com/papers/Distinguishing_Robot_Personality_from_Motion.pdf">here</a>!
 
-    - image: /images/robot-state-workshop.png
-      title: Designing tools to explore robot state expression
-      description: For this project, I designed a fun and interactive HAT. Imagine you are a robot which can emit lights, sounds and move around? I asked participants to do the same while using the hat that I had them wear!
+        - image: /images/robot-state-workshop.png
+          title: Designing tools to explore robot state expression
+          description: For this project, I designed a fun and interactive HAT. Imagine you are a robot which can emit lights, sounds and move around? I asked participants to do the same while using the hat that I had them wear!
 
-    - image: /images/exploring-robot-states.png
-      title: Understanding and Defining “Robot States” for General Population.
-      description: With increasing number of home and social robot products, it is essential for bystanders to feel comfortable in using and understanding these robots in their homes. Check out <a href="https://dl.acm.org/doi/abs/10.1145/3434074.3447145">here</a> what this means for different types of robots!
+        - image: /images/exploring-robot-states.png
+          title: Understanding and Defining “Robot States” for General Population.
+          description: With increasing number of home and social robot products, it is essential for bystanders to feel comfortable in using and understanding these robots in their homes. Check out <a href="https://dl.acm.org/doi/abs/10.1145/3434074.3447145">here</a> what this means for different types of robots!
 
-    - image: /images/just-treading.png
-      title: Desiging social navigation behavior for minimal robots.
-      description: Mobile robots are everywhere. Their success depends not only on their task performance, but also on how these machines and their behaviors are perceived by human users. Check out <a href="https://samarendrahedaoo.com/papers/Distinguishing_Robot_Personality_from_Motion.pdf">here</a> how I approach this problem through participatory design!
+        - image: /images/just-treading.png
+          title: Desiging social navigation behavior for minimal robots.
+          description: Mobile robots are everywhere. Their success depends not only on their task performance, but also on how these machines and their behaviors are perceived by human users. Check out <a href="https://samarendrahedaoo.com/papers/Distinguishing_Robot_Personality_from_Motion.pdf">here</a> how I approach this problem through participatory design!
 
-    - image: /images/chairbot-persuasion.png
-      title: Chairbot strategies for persuasion.
-      description: For this project, I was exploring various robot behaviors (sketched here) that would persuade people to come to the chairbots and play with them. Check out <a href="https://ieeexplore.ieee.org/abstract/document/8956262">here</a> what happened next!
+        - image: /images/chairbot-persuasion.png
+          title: Chairbot strategies for persuasion.
+          description: For this project, I was exploring various robot behaviors (sketched here) that would persuade people to come to the chairbots and play with them. Check out <a href="https://ieeexplore.ieee.org/abstract/document/8956262">here</a> what happened next!
 
-    - image: /images/chairbot-cafe.png
-      title: Chairbot cafe.
-      description: Imagine being hauled by a robotic chair that invites you to a robot cafe, where all the furniture is robotic. Curious? Find more about that future <a href="http://socialrobotsinthewild.org/wp-content/uploads/2018/02/HRI-SRW_2018_paper_8.pdf">here</a>!
+        - image: /images/chairbot-cafe.png
+          title: Chairbot cafe.
+          description: Imagine being hauled by a robotic chair that invites you to a robot cafe, where all the furniture is robotic. Curious? Find more about that future <a href="http://socialrobotsinthewild.org/wp-content/uploads/2018/02/HRI-SRW_2018_paper_8.pdf">here</a>!
 
-    - image: /images/chairbot-chess.jpg
-      title: ChairBot chess tournament setup.
-      description: Two ChairBots near a table were having a chessboard on it in a computer science school atrium. Each of them tried to move around and recruit bystanders to take part in the chess tournament. Who won? Find it out <a href="https://ieeexplore.ieee.org/abstract/document/8956262">here</a>!
+        - image: /images/chairbot-chess.jpg
+          title: ChairBot chess tournament setup.
+          description: Two ChairBots near a table were having a chessboard on it in a computer science school atrium. Each of them tried to move around and recruit bystanders to take part in the chess tournament. Who won? Find it out <a href="https://ieeexplore.ieee.org/abstract/document/8956262">here</a>!
 
-    - image: /images/robot-anthropo.png
-      title: De/anthropomorphic = An exploration of human and robot forms.
-      description: In groups, people can lose their individuality and blur into abstract forms. In this collaborative project with a dancer artist, we tried to explore this concept through robots. This <a href="">production</a> celebrates the unhuman in people with machines.
+        - image: /images/robot-anthropo.png
+          title: De/anthropomorphic = An exploration of human and robot forms.
+          description: In groups, people can lose their individuality and blur into abstract forms. In this collaborative project with a dancer artist, we tried to explore this concept through robots. This <a href="">production</a> celebrates the unhuman in people with machines.
 
-    - image: /images/alibot.png
-      title: Bachelor thesis project on building an alligator inspired robot.
-      description: For my undergrad ME thesis, I designed, fabricated and developed controller for an alligator inspired robot. The goal of this project was to understand the effect of body undulation on the robot's speed and energy consumption.
+        - image: /images/alibot.png
+          title: Bachelor thesis project on building an alligator inspired robot.
+          description: For my undergrad ME thesis, I designed, fabricated and developed controller for an alligator inspired robot. The goal of this project was to understand the effect of body undulation on the robot's speed and energy consumption.
 
 #-------------------------------
 # Subscribe Settings
 mailchimp:
-  mailchimp__title: Get updates on robots + music + art + ? # Add your Title
-  mailchimp__identifier: https://abhiagni.us9.list-manage.com/subscribe/post?u=cc45b160937a1598b1b9cc5b1&amp;id=f67363330f&amp;f_id=00e208e1f0 # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
-  mailchimp__button__text: Subscribe # Add your button text.
-  mailchimp__bg__color: "#f2eef9" # To change the color of the figure, add a hexadecimal color code (HEX). For example - "#f2eef8" (You can generate any color here - https://htmlcolorcodes.com/).
-
+    mailchimp__title: Get updates on robots + music + art + ? # Add your Title
+    mailchimp__identifier: https://abhiagni.us9.list-manage.com/subscribe/post?u=cc45b160937a1598b1b9cc5b1&amp;id=f67363330f&amp;f_id=00e208e1f0 # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
+    mailchimp__button__text: Subscribe # Add your button text.
+    mailchimp__bg__color: "#f2eef9" # To change the color of the figure, add a hexadecimal color code (HEX). For example - "#f2eef8" (You can generate any color here - https://htmlcolorcodes.com/).
 
 #-------------------------------
 # Footer Settings
 social:
-- {icon: "ion-logo-github", color: "#000000", label: Github, link: "https://github.com/abhiagni11"}
-- {icon: "ion-logo-linkedin", color: "#0072b1", label: Linkedin, link: "https://www.linkedin.com/in/abhijeet-agnihotri/"}
-- {icon: "ion-logo-twitter", color: "#55acee", label: Twitter, link: "https://twitter.com/agniabhijeet"}
-- {icon: "ion-logo-facebook", color: "#3b5999", label: Facebook, link: "https://www.facebook.com/abhiagniho"} 
-- {icon: "ion-logo-instagram", color: "#C13584", label: Instagram, link: "https://www.instagram.com/abhiagniho/"}
-- {icon: "ion ion-logo-youtube", color: "#FF0000", label: Youtube, link: "https://www.youtube.com/channel/UC3pDFASrOgaycX3yNWO7VZA"}
+    - {
+          icon: "ion-logo-github",
+          color: "#000000",
+          label: Github,
+          link: "https://github.com/abhiagni11",
+      }
+    - {
+          icon: "ion-logo-linkedin",
+          color: "#0072b1",
+          label: Linkedin,
+          link: "https://www.linkedin.com/in/abhijeet-agnihotri/",
+      }
+    - {
+          icon: "ion-logo-twitter",
+          color: "#55acee",
+          label: Twitter,
+          link: "https://twitter.com/agniabhijeet",
+      }
+    - {
+          icon: "ion-logo-facebook",
+          color: "#3b5999",
+          label: Facebook,
+          link: "https://www.facebook.com/abhiagniho",
+      }
+    - {
+          icon: "ion-logo-instagram",
+          color: "#C13584",
+          label: Instagram,
+          link: "https://www.instagram.com/abhiagniho/",
+      }
+    - {
+          icon: "ion ion-logo-youtube",
+          color: "#FF0000",
+          label: Youtube,
+          link: "https://www.youtube.com/channel/UC3pDFASrOgaycX3yNWO7VZA",
+      }
 
 # Example of adding a new link to the footer section - {icon: "ion-logo-github", color: "#24292e, label: Github, link: "https://github.com"}
 # Other icons can be found at https://ionicons.com/v4/
 
-
 #-------------------------------
 # Contact Settings
 contact:
-  email: f/xbjbyjry # Add your email for contact form
-  description: Please say hi! Ask me a question, reach out, share a funny meme or just send me a lovely wish. I accept kindness in all forms :) # Add a description of your form.
+    email: f/xbjbyjry # Add your email for contact form
+    description: Please say hi! Ask me a question, reach out, share a funny meme or just send me a lovely wish. I accept kindness in all forms :) # Add a description of your form.
 
 #-------------------------------
 # Comment Section (Disqus)
