@@ -6,23 +6,21 @@ let WORD_TO_GUESS = ``;
 let active_guess_row_index = 0;
 
 async function getTheWord() {
-    const promise = await fetch(WORD_OF_THE_DAY_URL);
-    const processedResponse = await promise.json();
-    return processedResponse.word.toUpperCase();
+    const response = await fetch(WORD_OF_THE_DAY_URL);
+    const data = await response.json();
+    return data.word.toUpperCase();
 }
 
 async function validateWord(word_to_validate) {
-    const promise = await fetch(VALIDATE_WORD_URL, {
+    const response = await fetch(VALIDATE_WORD_URL, {
         method: "POST",
-        body: JSON.stringify({
-            word: word_to_validate,
-        }),
+        body: JSON.stringify({ word: word_to_validate }),
         headers: {
             "Content-Type": "application/json",
         },
     });
-    const processedResponse = await promise.json();
-    return processedResponse.validWord;
+    const data = await response.json();
+    return data.validWord;
 }
 
 function isLetter(letter) {
@@ -50,38 +48,38 @@ function attachEventListenersToActiveRow() {
         [active_guess_row_index].querySelectorAll(".letter-box");
 
     inputs.forEach((input, input_index) => {
-        input.addEventListener("keydown", function (e) {
-            if (isLetter(e.key)) {
-                e.preventDefault();
-                input.value = e.key.toUpperCase();
+        input.addEventListener("input", function (e) {
+            if (isLetter(input.value)) {
+                input.value = input.value.toUpperCase();
+                const nextInput = inputs[input_index + 1];
                 if (input.value.length === input.maxLength) {
-                    const nextInput = inputs[input_index + 1];
                     if (nextInput) {
                         nextInput.focus();
                     } else {
-                        document.querySelector(".submit")?.focus();
+                        document.querySelector(".submit").focus();
                     }
                 }
-            } else if (e.key === "Backspace" && input.value !== "") {
+            } else {
                 input.value = "";
-            } else if (
-                e.key === "Backspace" &&
-                input.value === "" &&
-                input_index > 0
-            ) {
-                inputs[input_index - 1].focus();
-            } else if (!isLetter(e.key)) {
+            }
+        });
+
+        input.addEventListener("keydown", function (e) {
+            if (e.key === "Backspace" && input.value === "") {
                 e.preventDefault();
+                if (input_index > 0) {
+                    inputs[input_index - 1].focus();
+                }
             }
         });
     });
+
     document
         .querySelector(".submit")
         .addEventListener("keydown", function (event) {
             if (event.key === "Backspace") {
                 event.preventDefault();
-                const lastInput = inputs[inputs.length - 1];
-                lastInput.focus();
+                inputs[inputs.length - 1].focus();
             }
         });
 }
@@ -155,15 +153,15 @@ async function handleSubmitClick(event) {
         .querySelectorAll(".guess-row")
         [active_guess_row_index].querySelectorAll(".letter-box");
 
-    inputs.forEach((input, input_index) => {
+    inputs.forEach((input) => {
         submitted_guess += input.value;
         if (input.value === "") {
             is_word_5_letter = false;
         }
     });
 
-    if (is_word_5_letter !== true) {
-        showToast("Invalid word. Need to have a 5 letter word.", 3000);
+    if (!is_word_5_letter) {
+        showToast("Invalid word. Need to have a 5-letter word.", 3000);
     } else {
         is_word_valid = await validateWord(submitted_guess);
         if (!is_word_valid) {
@@ -172,7 +170,7 @@ async function handleSubmitClick(event) {
             compareLettersAndUpdateColor(submitted_guess);
             updateGuessedRow();
             setTimeout(function () {
-                if (isGuessCorrect(submitted_guess) === false) {
+                if (!isGuessCorrect(submitted_guess)) {
                     if (active_guess_row_index >= total_allowed_guesses) {
                         showToast(
                             `Uh oh! You were not able to guess the word, this time...\nthe word was ${WORD_TO_GUESS}`,
@@ -183,7 +181,7 @@ async function handleSubmitClick(event) {
                 } else {
                     document.querySelector(".submit").disabled = true;
                     showToast(
-                        `&#x1F389; You guessed it right &#x1F389;<br>That too in only ${active_guess_row_index} ${
+                        `🎉 You guessed it right 🎉<br>That too in only ${active_guess_row_index} ${
                             active_guess_row_index === 1
                                 ? "attempt"
                                 : "attempts"
