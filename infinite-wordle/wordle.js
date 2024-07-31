@@ -86,16 +86,6 @@ function attachEventListenersToActiveRow() {
         });
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-    attachEventListenersToActiveRow();
-    setTimeout(() => {
-        document
-            .querySelectorAll(".guess-row")
-            [active_guess_row_index].querySelectorAll(".letter-box")[0]
-            .focus();
-    }, 0);
-});
-
 function isGuessCorrect(submitted_guess) {
     if (submitted_guess === WORD_TO_GUESS) {
         disableInactiveInputs(true);
@@ -123,7 +113,7 @@ function compareLettersAndUpdateColor(submitted_guess) {
         ) {
             incorrect_place.push(i);
             word_to_guess_array[
-                word_to_guess_array.indexOf(submitted_guess[i])
+                word_to_guess_array.indexOf(submitted_guess[i], i + 1)
             ] = null;
         }
     }
@@ -176,7 +166,7 @@ async function handleSubmitClick(event) {
         showToast("Invalid word. Need to have a 5 letter word.", 3000);
     } else {
         is_word_valid = await validateWord(submitted_guess);
-        if (is_word_valid !== true) {
+        if (!is_word_valid) {
             showToast("Invalid word. Word not agreed by the dictionary.", 3000);
         } else {
             compareLettersAndUpdateColor(submitted_guess);
@@ -219,16 +209,6 @@ function endGame() {
     });
 }
 
-async function init() {
-    WORD_TO_GUESS = await getTheWord();
-    validateWord(WORD_TO_GUESS);
-    disableInactiveInputs();
-    document
-        .querySelector(".submit")
-        .addEventListener("click", handleSubmitClick);
-    showToast(`This wordle gives you a new word everytime you play it!`, 5000);
-}
-
 function showToast(message, duration, finish = false) {
     const toast = document.createElement("div");
     toast.className = "toast";
@@ -246,4 +226,24 @@ function showToast(message, duration, finish = false) {
     }, duration);
 }
 
-init();
+async function init() {
+    WORD_TO_GUESS = await getTheWord();
+    disableInactiveInputs();
+    attachEventListenersToActiveRow();
+    document
+        .querySelectorAll(".guess-row")
+        [active_guess_row_index].querySelectorAll(".letter-box")[0]
+        .focus();
+    document
+        .querySelector(".submit")
+        .addEventListener("click", handleSubmitClick);
+
+    const letters = document.querySelectorAll("#game .letter");
+
+    letters.forEach((letter, index) => {
+        setTimeout(() => letter.classList.add("drop-letter"), index * 300);
+    });
+    showToast("This Wordle gives you a new word every time you play it!", 5000);
+}
+
+document.addEventListener("DOMContentLoaded", init);
