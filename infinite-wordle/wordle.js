@@ -175,7 +175,7 @@ async function handleSubmitClick(event) {
                 if (isGuessCorrect(submitted_guess) === false) {
                     if (active_guess_row_index >= total_allowed_guesses) {
                         showToast(
-                            `Uh oh! You were not able to guess the word, this time... the word was ${WORD_TO_GUESS}`,
+                            `Uh oh! You were not able to guess the word, this time...\nthe word was ${WORD_TO_GUESS}`,
                             6000
                         );
                         endGame();
@@ -219,7 +219,7 @@ function showToast(message, duration, finish = false) {
     document.body.appendChild(toast);
     setTimeout(() => {
         toast.classList.add("show");
-    }, 0);
+    }, 100);
     setTimeout(() => {
         toast.classList.remove("show");
         toast.addEventListener("transitionend", () => toast.remove());
@@ -243,7 +243,17 @@ async function init() {
     letters.forEach((letter, index) => {
         setTimeout(() => letter.classList.add("drop-letter"), index * 300);
     });
-    showToast("This Wordle gives you a new word every time you play it!", 5000);
+
+    setTimeout(() => {
+        document.querySelector(".infinite-icon").classList.add("dissolve-in");
+    }, letters.length * 300 + 500);
+
+    setTimeout(() => {
+        showToast(
+            "This Wordle gives you a new word every time you play it!",
+            5000
+        );
+    }, letters.length * 300 + 1000);
 }
 
 document.addEventListener("DOMContentLoaded", init);
