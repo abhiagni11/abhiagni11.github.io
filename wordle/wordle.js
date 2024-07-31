@@ -1,4 +1,5 @@
-const WORD_OF_THE_DAY_URL = "https://words.dev-apis.com/word-of-the-day";
+const WORD_OF_THE_DAY_URL =
+    "https://words.dev-apis.com/word-of-the-day?random=1";
 const VALIDATE_WORD_URL = "https://words.dev-apis.com/validate-word";
 const total_allowed_guesses = document.querySelectorAll(".guess-row").length;
 let WORD_TO_GUESS = ``;
@@ -29,18 +30,18 @@ function isLetter(letter) {
 }
 
 function disableInactiveInputs(all_inputs = false) {
-    const allInputs = document.querySelectorAll(".letter-box");
-    allInputs.forEach((input) => {
-        input.disabled = true;
+    document.querySelectorAll(".guess-row").forEach((row, index) => {
+        const inputs = row.querySelectorAll(".letter-box");
+        if (all_inputs || index !== active_guess_row_index) {
+            inputs.forEach((input) => {
+                input.disabled = true;
+            });
+        } else {
+            inputs.forEach((input) => {
+                input.disabled = false;
+            });
+        }
     });
-    if (all_inputs === false) {
-        const activeInputs = document
-            .querySelectorAll(".guess-row")
-            [active_guess_row_index].querySelectorAll(".letter-box");
-        activeInputs.forEach((input) => {
-            input.disabled = false;
-        });
-    }
 }
 
 function attachEventListenersToActiveRow() {
@@ -74,10 +75,25 @@ function attachEventListenersToActiveRow() {
             }
         });
     });
+    document
+        .querySelector(".submit")
+        .addEventListener("keydown", function (event) {
+            if (event.key === "Backspace") {
+                event.preventDefault();
+                const lastInput = inputs[inputs.length - 1];
+                lastInput.focus();
+            }
+        });
 }
 
 document.addEventListener("DOMContentLoaded", function () {
     attachEventListenersToActiveRow();
+    setTimeout(() => {
+        document
+            .querySelectorAll(".guess-row")
+            [active_guess_row_index].querySelectorAll(".letter-box")[0]
+            .focus();
+    }, 0);
 });
 
 function isGuessCorrect(submitted_guess) {
@@ -127,6 +143,10 @@ function compareLettersAndUpdateColor(submitted_guess) {
 
 function updateGuessedRow() {
     active_guess_row_index += 1;
+    if (active_guess_row_index >= total_allowed_guesses) {
+        disableInactiveInputs();
+        return;
+    }
     setTimeout(() => {
         document
             .querySelectorAll(".guess-row")
@@ -137,63 +157,85 @@ function updateGuessedRow() {
     disableInactiveInputs();
 }
 
-document
-    .querySelector(".submit")
-    .addEventListener("click", async function (event) {
-        let submitted_guess = "";
-        let is_word_5_letter = true;
-        let is_word_valid = false;
-        const inputs = document
-            .querySelectorAll(".guess-row")
-            [active_guess_row_index].querySelectorAll(".letter-box");
+async function handleSubmitClick(event) {
+    let submitted_guess = "";
+    let is_word_5_letter = true;
+    let is_word_valid = false;
+    const inputs = document
+        .querySelectorAll(".guess-row")
+        [active_guess_row_index].querySelectorAll(".letter-box");
 
-        inputs.forEach((input, input_index) => {
-            submitted_guess += input.value;
-            if (input.value === "") {
-                is_word_5_letter = false;
-            }
-        });
-
-        if (is_word_5_letter !== true) {
-            showToast("Invalid word. Need to have a 5 letter word.");
-        } else {
-            is_word_valid = await validateWord(submitted_guess);
-            if (is_word_valid !== true) {
-                showToast("Invalid word. Word not agreed by the dictionary.");
-            } else {
-                compareLettersAndUpdateColor(submitted_guess);
-                updateGuessedRow();
-                setTimeout(function () {
-                    if (isGuessCorrect(submitted_guess) === false) {
-                        if (active_guess_row_index >= total_allowed_guesses) {
-                            showToast(
-                                `Uh oh! You were not able to guess the word, this time... the word was ${WORD_TO_GUESS}`
-                            );
-                        }
-                    } else {
-                        document.querySelector(".submit").disabled = true;
-                        showToast(
-                            `🎊 You guessed it right 🎊<br>That too in only ${active_guess_row_index} ${
-                                active_guess_row_index === 1
-                                    ? "attempt"
-                                    : "attempts"
-                            }!`
-                        );
-                    }
-                }, 0);
-            }
+    inputs.forEach((input, input_index) => {
+        submitted_guess += input.value;
+        if (input.value === "") {
+            is_word_5_letter = false;
         }
     });
+
+    if (is_word_5_letter !== true) {
+        showToast("Invalid word. Need to have a 5 letter word.", 3000);
+    } else {
+        is_word_valid = await validateWord(submitted_guess);
+        if (is_word_valid !== true) {
+            showToast("Invalid word. Word not agreed by the dictionary.", 3000);
+        } else {
+            compareLettersAndUpdateColor(submitted_guess);
+            updateGuessedRow();
+            setTimeout(function () {
+                if (isGuessCorrect(submitted_guess) === false) {
+                    if (active_guess_row_index >= total_allowed_guesses) {
+                        showToast(
+                            `Uh oh! You were not able to guess the word, this time... the word was ${WORD_TO_GUESS}`,
+                            6000
+                        );
+                        endGame();
+                    }
+                } else {
+                    document.querySelector(".submit").disabled = true;
+                    showToast(
+                        `&#x1F389; You guessed it right &#x1F389;<br>That too in only ${active_guess_row_index} ${
+                            active_guess_row_index === 1
+                                ? "attempt"
+                                : "attempts"
+                        }!`,
+                        5000,
+                        true
+                    );
+                    endGame();
+                }
+            }, 0);
+        }
+    }
+}
+
+function endGame() {
+    const submitButton = document.querySelector(".submit");
+    submitButton.textContent = "TRY A NEW WORD?";
+    submitButton.disabled = false;
+    submitButton.focus();
+    submitButton.removeEventListener("click", handleSubmitClick);
+    submitButton.addEventListener("click", function () {
+        location.reload();
+    });
+}
 
 async function init() {
     WORD_TO_GUESS = await getTheWord();
     validateWord(WORD_TO_GUESS);
+    console.log(WORD_TO_GUESS);
     disableInactiveInputs();
+    document
+        .querySelector(".submit")
+        .addEventListener("click", handleSubmitClick);
+    showToast(`This wordle gives you a new word everytime you play it!`, 5000);
 }
 
-function showToast(message) {
+function showToast(message, duration, finish = false) {
     const toast = document.createElement("div");
     toast.className = "toast";
+    if (finish) {
+        toast.classList.add("toast-large");
+    }
     toast.innerHTML = message;
     document.body.appendChild(toast);
     setTimeout(() => {
@@ -202,7 +244,7 @@ function showToast(message) {
     setTimeout(() => {
         toast.classList.remove("show");
         toast.addEventListener("transitionend", () => toast.remove());
-    }, 3000);
+    }, duration);
 }
 
 init();
