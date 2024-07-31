@@ -222,7 +222,6 @@ function endGame() {
 async function init() {
     WORD_TO_GUESS = await getTheWord();
     validateWord(WORD_TO_GUESS);
-    console.log(WORD_TO_GUESS);
     disableInactiveInputs();
     document
         .querySelector(".submit")
